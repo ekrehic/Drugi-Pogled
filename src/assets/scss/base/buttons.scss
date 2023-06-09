@@ -1,17 +1,20 @@
 .button {
-  padding: 4px 32px;
-  border-radius: 80px;
+  padding: 8px 16px;
+  border-radius: 4px;
   color: #ffffff;
-  background: #28B5B5;
+  background: #03AFAE;
   transition: all ease-out 400ms;
-  font-size: 18px;
-  text-transform: lowercase;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   border: none;
   outline: none;
 
   &:hover {
     color: #ffffff;
-    background: #8FD9A8;
+    transform: scale(1.01);
+    box-shadow: 2px 4px 10px rgba(34, 47, 79, 0.5)
   }
 
   &.is-green {
@@ -38,54 +41,5 @@
       height: 48px;
     }
 
-  }
-
-  &.is-hollow {
-    &.is-white {
-      border: 1px solid #fff;
-      background: transparent;
-    }
-  }
-
-  &.is-yellow {
-    background: #F8B400;
-  }
-
-  &.is-yellow-shape {
-    background-image: url("../images/RiverDrina_yellow-shape.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-
-    @media screen and (max-width: 768px) {
-      width: 45px;
-      height: 45px;
-    }
-  }
-
-  &.is-green-shape {
-    background-image: url("../images/RiverDrina_green-shape.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-
-    @media screen and (max-width: 768px) {
-      width: 45px;
-      height: 45px;
-    }
   }
 }

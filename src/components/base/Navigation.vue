@@ -2,7 +2,7 @@
   <div class="navigation">
     <div class="navigation__topbar">
       <div class="navigation__logo">
-        <img alt="River Drina" src="@/assets/images/RiverDrina_logo_plain.png"/>
+        <img alt="Drugi Pogled" src="@/assets/images/dp-logo.png"/>
       </div>
 
       <div class="navigation__menu is-hidden-touch">
@@ -15,8 +15,8 @@
             </div>
           </div>
           <div class="column is-2">
-            <button class="button" @click="bookApartment">
-              {{ $t(`navigation.book`) }}
+            <button class="button" @click="contact">
+              Kontaktiraj
             </button>
           </div>
         </div>
@@ -43,29 +43,30 @@
             </div>
           </router-link>
         </div>
-        <button class="button is-yellow" @click="bookApartment">
-          {{ $t(`navigation.book`) }}
+        <button class="button is-yellow" @click="contact">
+          Kontaktiraj
         </button>
     </div>
 
-    <div class="navigation__language-selector">
-      <span :class="currentLang === 'ba' ? `navigation__language is-active` : `navigation__language is-clickable`" @click="setLanguage('ba')">
-        BHS
-      </span>
-      <span>
-        /
-      </span>
-      <span :class="currentLang === 'en' ? `navigation__language is-active` : `navigation__language is-clickable`" @click="setLanguage('en')">
-        ENG
-      </span>
-    </div>
+<!--    <div class="navigation__language-selector">-->
+<!--      <span :class="currentLang === 'ba' ? `navigation__language is-active` : `navigation__language is-clickable`" @click="setLanguage('ba')">-->
+<!--        BHS-->
+<!--      </span>-->
+<!--      <span>-->
+<!--        /-->
+<!--      </span>-->
+<!--      <span :class="currentLang === 'en' ? `navigation__language is-active` : `navigation__language is-clickable`" @click="setLanguage('en')">-->
+<!--        ENG-->
+<!--      </span>-->
+<!--    </div>-->
 
+<!--    todo-->
     <b-modal v-model="modals.book">
       <div class="modal__body">
-        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
-          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
-        </div>
-        <book/>
+<!--        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">-->
+<!--          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>-->
+<!--        </div>-->
+<!--        <book/>-->
       </div>
     </b-modal>
   </div>
@@ -75,66 +76,51 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
-import Book from "@/components/forms/Book.vue";
 
-@Component({
-  components: {
-    Book,
-  }
-})
+@Component
 class Navigation extends Vue {
   isMobileMenuActive = false;
 
   modals = {
-    book: false,
+    contact: false,
   }
 
+  //todo routs
   get navigationItems() {
     return [
       {
-        name: this.$t(`navigation.about`),
+        name: 'Drugi pogled',
         link: '/about'
       },
       {
-        name: this.$t(`navigation.apartments`),
+        name: 'O meni',
         link: '/apartments'
       },
       {
-        name: this.$t(`navigation.wellnessSpa`),
+        name: 'O Gestalt terapiji',
         link: '/wellness'
       },
       {
-        name: this.$t(`navigation.swimmingPool`),
+        name: 'Usluge i cjenik',
         link: '/pool'
       },
       {
-        name: this.$t(`navigation.location`),
+        name: 'Suradnja',
         link: '/location'
       },
       {
-        name: this.$t(`navigation.contact`),
+        name: 'Kontakt',
         link: '/contact'
       },
     ];
   }
 
-  get currentLang() {
-    return this.$i18n.locale
-  }
-
-  setLanguage(lang) {
-    if(lang === this.$i18n.locale) return;
-
-    this.$i18n.locale = lang;
-  }
-
-
   toggleMenu() {
     this.isMobileMenuActive = !this.isMobileMenuActive;
   }
 
-  bookApartment() {
-    this.modals.book = true;
+  contact() {
+    //todo
   }
 }
 
@@ -153,7 +139,7 @@ export default Navigation;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 72px;
     z-index: 100;
 
     @media screen and (max-width: 1024px) {
@@ -165,7 +151,7 @@ export default Navigation;
     }
 
     .navigation__logo {
-      padding: 5px 0;
+      padding: 10px 0;
       height: 100%;
 
       img {
@@ -175,7 +161,11 @@ export default Navigation;
     }
 
     .navigation__menu {
-      width: 80%;
+      width: 70%;
+
+      @media (min-resolution: 280dpi) {
+        width: 80%;
+      }
 
       .columns {
         text-align: right;
@@ -187,8 +177,21 @@ export default Navigation;
       }
 
       .navigation__item {
-        text-transform: lowercase;
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media (min-resolution: 280dpi) {
+          font-size: 14px;
+        }
+
+
+        a {
+          color: #222F4F;
+
+          &:hover {
+            color: #03AFAE;
+          }
+        }
       }
 
       &.navigation__menu--touch {
@@ -232,7 +235,7 @@ export default Navigation;
 
           path {
             fill: none;
-            stroke: #28B5B5;
+            stroke: #03AFAE;
             stroke-width: 4;
             stroke-linecap: round;
             stroke-linejoin: round;
@@ -258,7 +261,7 @@ export default Navigation;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #8FD9A8;
+    background: #DED0BF;
     z-index: 80;
     transition: all 600ms cubic-bezier(.645, .045, .355, 1);
 
@@ -282,7 +285,7 @@ export default Navigation;
       a {
         font-size: 20px;
         font-weight: 600;
-        color: #ffffff;
+        color: #222F4F;
       }
     }
 
@@ -290,40 +293,6 @@ export default Navigation;
       margin-top: 10px;
       font-size: 20px;
       font-weight: 600;
-    }
-  }
-
-  .navigation__language-selector {
-    position: fixed;
-    top: 80px;
-    z-index: 100;
-    background: linear-gradient(45deg, transparent 0%, transparent 5%, #4B778D 60%, #4B778D 100%);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 50px;
-    color: #fff;
-    font-size: 15px;
-    height: 24px;
-
-    @media screen and (max-width: 1024px) {
-      top: 56px;
-    }
-
-    .navigation__language {
-      padding: 0 5px;
-
-      &.is-active {
-        font-weight: 700;
-      }
-
-      &.is-clickable {
-        :hover {
-          color: #8FD9A8;
-          cursor: pointer;
-        }
-      }
     }
   }
 }
