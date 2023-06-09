@@ -19,116 +19,89 @@ p {
 }
 
 h1, h2 {
-  color: #28B5B5;
+  color: #083C5A;
   font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3 {
   margin-bottom: 15px;
-
-  .wave {
-    display: block;
-    max-width: 58px;
-    padding: 0 4px;
-  }
-}
-
-.has-wave-right {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  @media screen and (max-width: 768px)  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.has-wave-left {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  @media screen and (max-width: 768px)  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.has-wave-centered {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 28px;
 
   @media screen and (max-width: 760px)  {
-    font-size: 34px;
+    font-size: 24px;
   }
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 28px;
   font-weight: 700;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 44px;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 42px;
-    text-align: center;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media screen and (max-width: 420px) {
-    font-size: 38px;
-  }
+  //@media screen and (max-width: 1024px) {
+  //  font-size: 20px;
+  //}
+  //
+  //@media screen and (max-width: 768px) {
+  //  font-size: 18px;
+  //  text-align: center;
+  //  display: inline-flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  //}
+  //
+  //@media screen and (max-width: 420px) {
+  //  font-size: 32px;
+  //}
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 24px;
 
   @media (min-resolution: 108dpi) {
-    font-size: 34px;
+    font-size: 22px;
   }
 
   @media screen and (max-width: 1024px) {
-    font-size: 34px;
+    font-size: 20px;
   }
-
-  @media screen and (max-width: 768px) {
-    font-size: 32px;
-  }
-
-  @media screen and (max-width: 420px) {
-    font-size: 28px;
-  }
+  //
+  //@media screen and (max-width: 768px) {
+  //  font-size: 32px;
+  //}
+  //
+  //@media screen and (max-width: 420px) {
+  //  font-size: 28px;
+  //}
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 20px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 420px) {
+  @media (min-resolution: 108dpi) {
     font-size: 18px;
   }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
+  //
+  //@media screen and (max-width: 768px) {
+  //  font-size: 32px;
+  //}
+  //
+  //@media screen and (max-width: 420px) {
+  //  font-size: 28px;
+  //}
 }
 
 a {
-  color: #28B5B5;
+  color: #083C5A;
+  font-weight: 600;
   transition: all ease-out 400ms;
 
   &:hover {
-    color: #8FD9A8;
+    color: #03AFAE;
   }
 }

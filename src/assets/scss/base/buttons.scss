@@ -17,28 +17,20 @@
     box-shadow: 2px 4px 10px rgba(34, 47, 79, 0.5)
   }
 
-  &.is-green {
-    background: #8FD9A8;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
   &.is-large {
-    padding: 4px 38px;
+    padding: 8px 20px;
     font-weight: 800;
-    font-size: 28px;
-    height: 54px;
+    font-size: 20px;
+    //height: 54px;
 
     @media screen and (max-width: 768px) {
-      font-size: 24px;
-      height: 42px;
+      font-size: 18px;
+      padding: 8px 16px;
     }
 
     @media (min-resolution: 108dpi) {
-      font-size: 24px;
-      height: 48px;
+     // font-size: 24px;
+     // height: 48px;
     }
 
   }
