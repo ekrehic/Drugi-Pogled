@@ -1,0 +1,94 @@
+.form {
+  .input,
+  .select,
+  .textarea {
+    border-radius: 20px;
+    border-color: #28B5B5;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(40, 181, 181, 0.5);
+    }
+
+    select {
+      border-radius: 20px;
+      border-color: #28B5B5;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 8px rgba(40, 181, 181, 0.5);
+      }
+    }
+  }
+
+  .input,
+  .textarea {
+    padding-left: 15px;
+  }
+
+  .select {
+    &::after  {
+      border-color: #28B5B5 !important;
+    }
+  }
+
+  .b-numberinput {
+      width: 100%;
+
+      input {
+        text-align: left;
+
+        &::placeholder {
+          text-align: left;
+        }
+      }
+  }
+
+  .datepicker {
+    .datepicker-header {
+      padding-bottom: 10px;
+      margin-bottom: 0;
+
+      .pagination-previous,
+      .pagination-next {
+        display: none;
+      }
+
+      .pagination-list {
+        .control {
+          padding: 0;
+
+        }
+      }
+    }
+
+    .input {
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 8px rgba(40, 181, 181, 0.5) !important;
+      }
+    }
+
+    .dropdown-content {
+      padding-top: 0;
+    }
+
+    .datepicker-table {
+     .datepicker-cell {
+       padding: 4px 8px;
+
+       &.is-today {
+         border-color: rgba(40, 181, 181, 0.5);
+       }
+
+       &.is-selected {
+        background-color: #28B5B5;
+       }
+     }
+    }
+  }
+
+  .help.counter {
+    display: none;
+  }
+}
