@@ -11,34 +11,22 @@ body {
 }
 
 .section {
-  padding: 40px 250px;
+  padding: 20px 120px;
 
   @media screen and (min-width: 1920px) {
-    padding: 40px 300px;
+    padding: 20px 180px;
   }
 
   @media screen and (min-width: 2250px) {
-    padding: 40px 350px;
-  }
-
-  @media screen and (max-width: 1600px) {
-    padding: 40px 180px;
-  }
-
-  @media screen and (max-width: 1412px) {
-    padding: 30px 120px;
+    padding: 20px 220px;
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 30px 80px;
+    padding: 20px 80px;
   }
 
   @media screen and (max-width: 768px) {
     padding: 20px 40px;
-  }
-
-  @media screen and (max-width: 420px) {
-    padding: 20px 30px;
   }
 }
 

@@ -3,15 +3,16 @@
     <navigation/>
     <page-cover/>
     <features/>
-    <about/>
-    <apartments/>
-    <location-features :text="$t(`welcome.text`)"/>
-    <wellness/>
-    <pool/>
-    <location/>
-    <quote/>
-    <contact/>
-    <page-footer/>
+    <about-me/>
+<!--    <about-gestalt/>-->
+<!--    <apartments/>-->
+<!--    <location-features :text="$t(`welcome.text`)"/>-->
+<!--    <wellness/>-->
+<!--    <pool/>-->
+<!--    <location/>-->
+<!--    <quote/>-->
+<!--    <contact/>-->
+<!--    <page-footer/>-->
   </div>
 
 </template>
@@ -24,7 +25,8 @@ import PageFooter from "@/components/base/Footer.vue";
 import PageCover from "@/components/sections/PageCover.vue";
 import Features from "@/components/sections/Features.vue";
 import Apartments from "@/components/sections/Apartments.vue";
-import About from "@/components/sections/About.vue";
+import AboutMe from "@/components/sections/AboutMe.vue";
+import AboutGestalt from "@/components/sections/AboutGestalt.vue";
 import Quote from "@/components/sections/Quote.vue";
 import LocationFeatures from "@/components/sections/LocationFeatures.vue";
 import Wellness from "@/components/sections/Wellness.vue";
@@ -37,7 +39,8 @@ import Contact from "@/components/sections/Contact.vue";
     Navigation,
     PageCover,
     Features,
-    About,
+    AboutMe,
+    AboutGestalt,
     Apartments,
     Quote,
     Wellness,

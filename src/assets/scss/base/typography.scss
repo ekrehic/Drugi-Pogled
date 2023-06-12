@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
 @charset "UTF-8";
 
 $body-font: 'Montserrat', sans-serif;
@@ -8,30 +9,27 @@ body, p {
   font-family: 'Montserrat', sans-serif;
 }
 
-p {
-  @media screen and (max-width: 760px)  {
-    text-align: center;
-  }
-
-  @media (min-resolution: 108dpi) {
-    font-size: 14px;
-  }
-}
-
 h1, h2 {
-  color: #083C5A;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
 }
 
-h1, h2, h3 {
-  margin-bottom: 15px;
+p {
+  font-size: 14px;
+
+  @media (min-resolution: 240dpi) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 760px)  {
+    text-align: justify;
+  }
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 48px;
 
   @media screen and (max-width: 760px)  {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
@@ -57,19 +55,19 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
 
-  @media (min-resolution: 108dpi) {
-    font-size: 22px;
+  @media (min-resolution: 208dpi) {
+    font-size: 18px;
   }
 
   @media screen and (max-width: 1024px) {
     font-size: 20px;
   }
-  //
-  //@media screen and (max-width: 768px) {
-  //  font-size: 32px;
-  //}
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
   //
   //@media screen and (max-width: 420px) {
   //  font-size: 28px;

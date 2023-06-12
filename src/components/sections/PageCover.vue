@@ -9,15 +9,14 @@
           </span>
            koristeći metode i tehnike
           <span class="has-text-weight-semibold">
-            Gestalt terapije
+            Gestalt terapije.
           </span>
-          .
           <span class="is-block"></span>
           Savjetovanje je namijenjeno
           <span class="has-text-weight-semibold">
-            mladima i odraslima
+            mladima i odraslima,
           </span>
-          , a s ciljem unapređenja mentalnog zdravlja te
+          a s ciljem unapređenja mentalnog zdravlja te
           <span class="has-text-weight-semibold">
             poboljšanja kvalitete života
           </span>
@@ -81,16 +80,20 @@ export default PageCover;
       max-width: 380px;
       margin-bottom: 20px;
 
+      @media (min-resolution: 240dpi) {
+        max-width: 300px;
+      }
+
+      @media (min-resolution: 320dpi) {
+        max-width: 240px;
+      }
+
       @media screen and (max-width: 1024px) {
         max-width: 300px;
       }
 
       @media screen and (max-width: 768px) {
-        max-width: 200px;
-      }
-
-      @media screen and (max-width: 420px) {
-        max-width: 100%;
+        max-width: 180px;
       }
     }
 
