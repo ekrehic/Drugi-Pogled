@@ -29,7 +29,7 @@
       <b-modal v-model="modals.contact">
         <div class="modal__body">
           <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
-            <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
+            <img alt="Drugi Pogled" src="@/assets/images/dp-logo.png"/>
           </div>
           <contact-form/>
         </div>

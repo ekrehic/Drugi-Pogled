@@ -5,7 +5,7 @@
       <h2 class="has-wave-centered">
         {{$t('contact.contactUs')}}
         <span>
-          <img class="wave" src="@/assets/images/wave-yellow.png" alt="Yellow river drina wave"/>
+          <img alt="Drugi Pogled" src="@/assets/images/dp-logo.png"/>
         </span>
       </h2>
       <p>

@@ -2,33 +2,38 @@
   <div class="form form--book">
     <div class="columns is-multiline m-0">
       <div class="column is-6">
-        <b-field>
-          <b-input v-model="formData.firstName" :placeholder="$t(`form.firstName`)"></b-input>
+        <b-field label="Ime">
+          <b-input v-model="formData.firstName"></b-input>
         </b-field>
       </div>
       <div class="column is-6">
-        <b-field>
-          <b-input v-model="formData.lastName" :placeholder="$t(`form.lastName`)"></b-input>
+        <b-field label="Prezime">
+          <b-input v-model="formData.lastName"></b-input>
         </b-field>
       </div>
 
       <div class="column is-12">
-        <b-field>
+        <b-field label="Email">
           <b-input
               v-model="formData.email"
-              :placeholder="$t(`form.email`)"
               type="email"
-              maxlength="30"
           ></b-input>
         </b-field>
       </div>
       <div class="column is-12">
-        <b-field>
+        <b-field label="Broj telefona">
+          <b-input
+              v-model="formData.phone"
+              type="phone"
+          ></b-input>
+        </b-field>
+      </div>
+      <div class="column is-12">
+        <b-field label="Poruka">
           <b-input
               v-model="formData.message"
               maxlength="3000"
               type="textarea"
-              :placeholder="$t(`form.message`)"
           ></b-input>
         </b-field>
       </div>
@@ -48,6 +53,9 @@
             <input class="form__input"  type="email" id="email" name="Email"   :value="formData.email">
           </div>
           <div class="column is-6 is-offset-3">
+            <input class="form__input"  type="phone" id="phone" name="Phone"   :value="formData.phone">
+          </div>
+          <div class="column is-6 is-offset-3">
             <input class="form__input" name="Message" id="message" :value="formData.message"/>
           </div>
         </div>
@@ -56,7 +64,7 @@
 
             <button class="button m-t-10">
                 <span class="text">
-                  {{ $t(`form.contact`) }}
+                  Kontaktiraj
                 </span>
               <span class="dot"></span>
               <span class="icon-wrapper">
@@ -83,6 +91,7 @@ class ContactForm extends Vue {
     firstName: '',
     lastName: '',
     email: '',
+    phone: '',
     message: '',
   }
 

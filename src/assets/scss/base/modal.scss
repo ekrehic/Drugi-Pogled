@@ -27,14 +27,15 @@
 
     .modal-close {
       position: absolute;
-      background-image: url("../images/RiverDrina_yellow-shape.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      background-color: #DED0BF;
+      border-radius: 100px;
 
       &:hover,
       &:focus {
-        background-color: unset;
+        &::before,
+        &::after {
+          background-color: #732C2C;
+        }
       }
 
       &.is-large {

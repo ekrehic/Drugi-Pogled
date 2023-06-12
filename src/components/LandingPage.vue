@@ -4,7 +4,7 @@
     <page-cover/>
     <features/>
     <about-me/>
-<!--    <about-gestalt/>-->
+    <about-gestalt/>
 <!--    <apartments/>-->
 <!--    <location-features :text="$t(`welcome.text`)"/>-->
 <!--    <wellness/>-->
