@@ -26,37 +26,37 @@ export default new VueRouter({
             component: ComingSoon,
         },
         {
-            path: '/about',
+            path: '/drugiPogled',
             name: 'About',
             component: LandingPage,
             meta: {element: '#about'}
         },
         {
-            path: '/apartments',
-            name: 'Apartments',
+            path: '/oMeni',
+            name: 'AboutMe',
             component: LandingPage,
-            meta: {element: '#apartments'}
+            meta: {element: '#aboutMe'}
         },
         {
-            path: '/wellness',
-            name: 'Wellness',
+            path: '/oGestaltTerapiji',
+            name: 'AboutGestalt',
             component: LandingPage,
-            meta: {element: '#wellness'}
+            meta: {element: '#aboutGestalt'}
         },
         {
-            path: '/pool',
-            name: 'Pool',
+            path: '/usluge',
+            name: 'UslugeCjenik',
             component: LandingPage,
-            meta: {element: '#pool'}
+            meta: {element: '#services'}
         },
         {
-            path: '/location',
-            name: 'Loaction',
+            path: '/suradnja',
+            name: 'Suradnja',
             component: LandingPage,
-            meta: {element: '#location'}
+            meta: {element: '#collaboration'}
         },
         {
-            path: '/contact',
+            path: '/kontakt',
             name: 'Contact',
             component: LandingPage,
             meta: {element: '#contact'}

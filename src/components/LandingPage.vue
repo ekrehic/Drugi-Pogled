@@ -5,6 +5,8 @@
     <features/>
     <about-me/>
     <about-gestalt/>
+    <services/>
+    <collaboration/>
 <!--    <apartments/>-->
 <!--    <location-features :text="$t(`welcome.text`)"/>-->
 <!--    <wellness/>-->
@@ -21,18 +23,14 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import Navigation from "@/components/base/Navigation.vue";
-import PageFooter from "@/components/base/Footer.vue";
 import PageCover from "@/components/sections/PageCover.vue";
 import Features from "@/components/sections/Features.vue";
-import Apartments from "@/components/sections/Apartments.vue";
 import AboutMe from "@/components/sections/AboutMe.vue";
 import AboutGestalt from "@/components/sections/AboutGestalt.vue";
-import Quote from "@/components/sections/Quote.vue";
-import LocationFeatures from "@/components/sections/LocationFeatures.vue";
-import Wellness from "@/components/sections/Wellness.vue";
-import Pool from "@/components/sections/Pool.vue";
-import Location from "@/components/sections/Location.vue";
+import Services from "@/components/sections/Services.vue";
+import Collaboration from "@/components/sections/Collaboration.vue";
 import Contact from "@/components/sections/Contact.vue";
+import PageFooter from "@/components/base/Footer.vue";
 
 @Component({
   components: {
@@ -41,14 +39,10 @@ import Contact from "@/components/sections/Contact.vue";
     Features,
     AboutMe,
     AboutGestalt,
-    Apartments,
-    Quote,
-    Wellness,
-    Pool,
-    Location,
+    Services,
+    Collaboration,
     Contact,
     PageFooter,
-    LocationFeatures,
   }
 })
 class LandingPage extends Vue {

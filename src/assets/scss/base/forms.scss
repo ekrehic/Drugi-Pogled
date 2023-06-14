@@ -15,8 +15,6 @@
   .textarea {
     border-radius: 4px;
     border-color: rgba(222, 208, 191, 0.6);
-    //padding-top: 2px;
-    //padding-bottom: 2px;
 
     &:focus {
       outline: none;
@@ -55,64 +53,32 @@
       border-color: #03AFAE !important;
     }
   }
-  //
-  //.b-numberinput {
-  //    width: 100%;
-  //
-  //    input {
-  //      text-align: left;
-  //
-  //      &::placeholder {
-  //        text-align: left;
-  //      }
-  //    }
-  //}
 
-  //.datepicker {
-  //  .datepicker-header {
-  //    padding-bottom: 10px;
-  //    margin-bottom: 0;
-  //
-  //    .pagination-previous,
-  //    .pagination-next {
-  //      display: none;
-  //    }
-  //
-  //    .pagination-list {
-  //      .control {
-  //        padding: 0;
-  //
-  //      }
-  //    }
-  //  }
-  //
-  //  .input {
-  //    &:focus {
-  //      outline: none;
-  //      box-shadow: 0 0 8px rgba(40, 181, 181, 0.5) !important;
-  //    }
-  //  }
-  //
-  //  .dropdown-content {
-  //    padding-top: 0;
-  //  }
-  //
-  //  .datepicker-table {
-  //   .datepicker-cell {
-  //     padding: 4px 8px;
-  //
-  //     &.is-today {
-  //       border-color: rgba(40, 181, 181, 0.5);
-  //     }
-  //
-  //     &.is-selected {
-  //      background-color: #28B5B5;
-  //     }
-  //   }
-  //  }
-  //}
-  //
-  //.help.counter {
-  //  display: none;
-  //}
+  .b-checkbox.checkbox:not(.button) {
+    margin-right: 20px;
+    margin-top: 2px;
+
+    .control-label {
+      padding-left: 5px;
+    }
+  }
+
+  .b-checkbox.checkbox input[type=checkbox]:checked + .check{
+    border-color: #03AFAE;
+    background-color: #03AFAE;
+    color: white;
+  }
+
+  .b-checkbox.checkbox:hover input[type=checkbox]:not(:disabled) + .check {
+    border-color: #03AFAE;
+  }
+
+  .column {
+    padding: 8px;
+  }
+
+  .help.counter {
+    height: 0;
+  }
+
 }

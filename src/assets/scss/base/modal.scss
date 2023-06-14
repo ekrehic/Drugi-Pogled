@@ -13,6 +13,10 @@
     padding: 50px;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+      padding: 30px;
+    }
+
     .modal__body {
       background: #fff;
       border-radius: 20px;
@@ -21,7 +25,7 @@
       overflow: auto;
 
       @media screen and (max-width: 768px) {
-        padding: 60px 10px 10px;
+        padding: 20px;
       }
     }
 

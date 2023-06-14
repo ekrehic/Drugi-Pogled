@@ -21,7 +21,13 @@
     padding: 8px 20px;
     font-weight: 800;
     font-size: 20px;
-    //height: 54px;
+
+    &:hover {
+      color: #ffffff;
+      transform: scale(1.01);
+      box-shadow: 2px 4px 10px rgba(34, 47, 79, 0.5)
+    }
+
 
     @media screen and (max-width: 768px) {
       font-size: 18px;
@@ -33,5 +39,15 @@
      // height: 48px;
     }
 
+  }
+
+  &[disabled] {
+    background-color: #CFCFCF;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
   }
 }

@@ -57,7 +57,7 @@ export default AboutMe;
     background: #222F4F;
     color: #fff;
 
-    p {
+    h1, p {
       color: #fff;
     }
 

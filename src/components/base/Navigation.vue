@@ -90,27 +90,27 @@ class Navigation extends Vue {
     return [
       {
         name: 'Drugi pogled',
-        link: '/about'
+        link: '/drugiPogled'
       },
       {
         name: 'O meni',
-        link: '/apartments'
+        link: '/oMeni'
       },
       {
         name: 'O Gestalt terapiji',
-        link: '/wellness'
+        link: '/oGestaltTerapiji'
       },
       {
         name: 'Usluge i cjenik',
-        link: '/pool'
+        link: '/usluge'
       },
       {
         name: 'Suradnja',
-        link: '/location'
+        link: '/suradnja'
       },
       {
         name: 'Kontakt',
-        link: '/contact'
+        link: '/kontakt'
       },
     ];
   }

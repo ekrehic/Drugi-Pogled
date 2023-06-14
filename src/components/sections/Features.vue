@@ -1,5 +1,5 @@
 <template>
-  <div class="section features">
+  <div class="section features" id="about">
     <div class="columns is-multiline">
       <div v-for="f in features" :key="`feature-${f.name}`" class="column is-2">
         <div class="feature">

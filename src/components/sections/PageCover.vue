@@ -22,15 +22,12 @@
           </span>
           naših klijenata.
         </h3>
-        <button class="button is-large is-green" @click="modals.contact = true">
+        <button class="button is-large" @click="modals.contact = true">
           Zatražite termin
         </button>
       </div>
       <b-modal v-model="modals.contact">
         <div class="modal__body">
-          <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
-            <img alt="Drugi Pogled" src="@/assets/images/dp-logo.png"/>
-          </div>
           <contact-form/>
         </div>
       </b-modal>

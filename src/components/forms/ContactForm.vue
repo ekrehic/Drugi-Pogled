@@ -1,22 +1,27 @@
 <template>
   <div class="form form--book">
+    <div class="is-flex is-justify-content-center is-align-items-center p-b-15">
+      <img class="modal__logo" alt="Drugi Pogled" src="@/assets/images/dp-logo.png"/>
+    </div>
+
     <div class="columns is-multiline m-0">
       <div class="column is-6">
-        <b-field label="Ime">
-          <b-input v-model="formData.firstName"></b-input>
+        <b-field label="Ime*">
+          <b-input v-model="formData.firstName" required></b-input>
         </b-field>
       </div>
       <div class="column is-6">
-        <b-field label="Prezime">
-          <b-input v-model="formData.lastName"></b-input>
+        <b-field label="Prezime*">
+          <b-input v-model="formData.lastName" required></b-input>
         </b-field>
       </div>
 
       <div class="column is-12">
-        <b-field label="Email">
+        <b-field label="Email*">
           <b-input
               v-model="formData.email"
               type="email"
+              required
           ></b-input>
         </b-field>
       </div>
@@ -29,11 +34,24 @@
         </b-field>
       </div>
       <div class="column is-12">
-        <b-field label="Poruka">
+        <b-field label="Preferiram">
+          <b-checkbox v-model="formData.termin"
+                      native-value="Jutarnji termin">
+            Jutarnji termin
+          </b-checkbox>
+          <b-checkbox v-model="formData.termin"
+                      native-value="Popodnevni termin">
+            Popodnevni termin
+          </b-checkbox>
+        </b-field>
+      </div>
+      <div class="column is-12">
+        <b-field label="Poruka*">
           <b-input
               v-model="formData.message"
               maxlength="3000"
               type="textarea"
+              reqired
           ></b-input>
         </b-field>
       </div>
@@ -56,13 +74,16 @@
             <input class="form__input"  type="phone" id="phone" name="Phone"   :value="formData.phone">
           </div>
           <div class="column is-6 is-offset-3">
+            <input class="form__input"  type="termin" id="termin" name="Termin"   :value="formData.termin.join(', ')">
+          </div>
+          <div class="column is-6 is-offset-3">
             <input class="form__input" name="Message" id="message" :value="formData.message"/>
           </div>
         </div>
         <div class="columns m-0">
           <div class="column p-0 is-12 has-text-right">
 
-            <button class="button m-t-10">
+            <button class="button m-t-10 is-fullwidth" :disabled="isFormInvalid">
                 <span class="text">
                   Kontaktiraj
                 </span>
@@ -92,7 +113,14 @@ class ContactForm extends Vue {
     lastName: '',
     email: '',
     phone: '',
+    termin: [],
     message: '',
+  };
+
+  get isFormInvalid() {
+    const requiredFieldsKeys = ['firstName', 'lastName', 'email', 'message'];
+
+    return requiredFieldsKeys.some(key => !this.formData[key]);
   }
 
 }
@@ -102,6 +130,18 @@ export default ContactForm;
 
 <style lang="scss">
 .form--book {
+  .modal__logo {
+    @media screen and (max-width: 768px) {
+      max-width: 40px;
+    }
+  }
+
+  .field.has-addons {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
 }
 
 </style>
