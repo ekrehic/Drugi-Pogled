@@ -99,12 +99,25 @@ export default Services;
       }
     }
 
+    .price {
+      font-size: 34px;
+    }
+
+    .duration {
+      font-size: 20px;
+    }
+
     .separator {
       height: 2px;
-      width: 40%;
+      width: 50%;
       background: #DED0BF;
       margin: 10px auto;
     }
+  }
+
+  .info {
+    font-size: 12px;
+    color: #fff;
   }
 }
 

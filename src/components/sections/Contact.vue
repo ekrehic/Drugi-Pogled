@@ -1,53 +1,47 @@
 <template>
-  <div id="contact" class="section contact">
-    <div class="contact__block">
-      <div class="contact__block__bg"></div>
-      <h2 class="has-wave-centered">
-        {{$t('contact.contactUs')}}
-        <span>
-          <img alt="Drugi Pogled" src="@/assets/images/dp-logo.png"/>
-        </span>
-      </h2>
-      <p>
-        Redžići 50, Bratunac 75420
-      </p>
-      <p>
-        Bosna i Hercegovina
-      </p>
-      <div class="contact__phones">
-        <p class="contact__phone">
-          +41767923562
-        </p>
-        <p class="contact__phone">
-          +38766448280
-        </p>
-      </div>
-      <p>
-        info@riverdrina.ba
-      </p>
-      <div class="contact__ctas">
-        <button class="button" @click="modals.contact = true;">
-          {{ $t(`contact.contactUs`) }}
-        </button>
-        <button class="button" @click="modals.book = true;">
-          {{ $t(`contact.bookNow`) }}
+  <div id="contact" class="contact">
+    <a
+        href="https://www.google.com/maps/place/Hercegova%C4%8Dka+ul.+59,+10000,+Zagreb,+Hrvatska/@45.8165184,15.954579,17z/data=!3m1!4b1!4m6!3m5!1s0x4765d6df9c4958d3:0x3a845637937cd51d!8m2!3d45.8165184!4d15.9571539!16s%2Fg%2F11ft0lclvk?entry=ttu"
+        class=" contact__map lh-0"
+        target="_blank"
+    >
+      <img src="@/assets/images/map.jpg" alt="Drugi pogled"/>
+    </a>
+    <div class="contact__content">
+      <div class="contact__info">
+        <h1 class="has-text-centered p-b-15">
+          Kontakt
+        </h1>
+
+        <div class="contact__info-data is-flex is-flex-direction-column" style="gap: 15px;">
+          <div class="data is-flex is-align-items-center" style="gap: 10px">
+            <svg-icons icon="location" stroke="#22625D"/>
+            <p>
+              Hercegovačka ulica 59, 10000 Zagreb
+            </p>
+          </div>
+          <div class="data is-flex is-align-items-center" style="gap: 10px">
+            <svg-icons icon="phone" stroke="#22625D"/>
+            <p>
+              +385 98 817 833
+            </p>
+          </div>
+          <div class="data is-flex is-align-items-center" style="gap: 10px">
+            <svg-icons icon="mail" stroke="#22625D"/>
+            <p>
+              info@drugipogled.hr
+            </p>
+          </div>
+        </div>
+
+        <button class="button is-fullwidth" @click="modals.contact = true">
+          Kontaktirajte nas
         </button>
       </div>
     </div>
 
-    <b-modal v-model="modals.book">
-      <div class="modal__body">
-        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
-          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
-        </div>
-        <book/>
-      </div>
-    </b-modal>
     <b-modal v-model="modals.contact">
       <div class="modal__body">
-        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">
-          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>
-        </div>
         <contact-form/>
       </div>
     </b-modal>
@@ -68,7 +62,6 @@ import ContactForm from "@/components/forms/ContactForm.vue";
 })
 class Contact extends Vue {
   modals = {
-    book: false,
     contact: false,
   }
 }
@@ -78,66 +71,37 @@ export default Contact;
 
 <style lang="scss">
 .contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("images/RiverDrina_contact.png");
-  background-size: cover;
-  background-position: center;
+  background: #222F4F;
 
-  .contact__block {
-    position: relative;
-    padding: 20px 40px;
-    text-align: center;
-    margin: 20px 0;
+  .contact__map {
+    width: 100vw;
 
-    .contact__block__bg {
-      position: absolute;
+    img {
       width: 100%;
-      height: 100%;
-      background: rgba(75, 119, 141, 0.2);
-      box-shadow: 0 4px 30px rgba(75, 119, 141, 0.1);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      border-radius: 16px;
-      border-top: 1px solid #28B5B5;
-      top: 0;
-      left: 0;
-      z-index: 0;
     }
+  }
 
-    >:not(.contact__block__bg) {
-      z-index: 1;
+  .contact__content {
+    background: #222F4F;
+    min-height: 350px;
+
+    .contact__info {
+      background: #fff;
       position: relative;
-    }
+      box-shadow: 2px 4px 20px rgba(34, 47, 79, 0.5);
+      border-radius: 4px;
+      width: 45%;
+      margin: -100px auto;
+      padding: 20px 40px;
 
-    h2, p {
-      color: #fff;
-    }
+      .contact__info-data {
+        margin-bottom: 30px;
 
-    p {
-      padding: 5px;
-    }
-
-    .contact__phones {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .contact__phone {
-        padding: 5px 10px;
-
-        &:first-child {
-          border-right: 2px solid #F8B400;
+        .data {
+          p {
+            font-size: 18px;
+          }
         }
-      }
-    }
-
-    .contact__ctas {
-      padding-top: 20px;
-
-      .button {
-        margin: 5px 10px;
       }
     }
   }

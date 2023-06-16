@@ -7,13 +7,7 @@
     <about-gestalt/>
     <services/>
     <collaboration/>
-<!--    <apartments/>-->
-<!--    <location-features :text="$t(`welcome.text`)"/>-->
-<!--    <wellness/>-->
-<!--    <pool/>-->
-<!--    <location/>-->
-<!--    <quote/>-->
-<!--    <contact/>-->
+    <contact/>
 <!--    <page-footer/>-->
   </div>
 
