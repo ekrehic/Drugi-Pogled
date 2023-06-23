@@ -121,7 +121,7 @@ class Navigation extends Vue {
   }
 
   contact() {
-    //todo
+    this.modals.contact = true;
   }
 }
 
