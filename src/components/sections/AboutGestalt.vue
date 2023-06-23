@@ -50,10 +50,18 @@ export default AboutGestalt;
 
   .column--image {
     padding-right: 40px;
+
+    @media screen and (max-width: 768px) {
+      padding-right: 12px;
+    }
   }
 
   .column--text {
     padding-left: 40px;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 12px;
+    }
   }
 }
 </style>

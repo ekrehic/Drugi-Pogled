@@ -5,7 +5,8 @@
         class=" contact__map lh-0"
         target="_blank"
     >
-      <img src="@/assets/images/map.jpg" alt="Drugi pogled"/>
+      <img src="@/assets/images/map.jpg" alt="Drugi pogled" class="is-hidden-mobile"/>
+      <img src="@/assets/images/map-mobile.jpg" alt="Drugi pogled" class="is-hidden-tablet"/>
     </a>
     <div class="contact__content">
       <div class="contact__info">
@@ -94,10 +95,34 @@ export default Contact;
       margin: -100px auto;
       padding: 20px 40px;
 
+      @media screen and (max-width: 1024px) {
+        width: 65%;
+        margin: -80px auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        margin: -180px auto;
+      }
+
+      @media screen and (max-width: 520px) {
+        width: 85%;
+        margin: -140px auto;
+      }
+
+
       .contact__info-data {
         margin-bottom: 30px;
 
         .data {
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+
+            > * {
+              text-align: center;
+            }
+          }
+
           p {
             font-size: 18px;
           }

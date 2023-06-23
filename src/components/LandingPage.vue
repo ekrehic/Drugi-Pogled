@@ -8,7 +8,7 @@
     <services/>
     <collaboration/>
     <contact/>
-<!--    <page-footer/>-->
+    <page-footer/>
   </div>
 
 </template>

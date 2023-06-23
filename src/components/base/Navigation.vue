@@ -60,13 +60,9 @@
 <!--      </span>-->
 <!--    </div>-->
 
-<!--    todo-->
-    <b-modal v-model="modals.book">
+    <b-modal v-model="modals.contact">
       <div class="modal__body">
-<!--        <div class="is-flex is-justify-content-center is-align-items-center p-b-20">-->
-<!--          <img class="wave" src="@/assets/images/wave-green.png" alt="Green river drina wave"/>-->
-<!--        </div>-->
-<!--        <book/>-->
+        <contact-form/>
       </div>
     </b-modal>
   </div>
@@ -76,8 +72,13 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
+import ContactForm from "@/components/forms/ContactForm.vue";
 
-@Component
+@Component({
+  components: {
+    ContactForm,
+  }
+})
 class Navigation extends Vue {
   isMobileMenuActive = false;
 

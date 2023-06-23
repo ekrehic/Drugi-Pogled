@@ -71,9 +71,21 @@ export default Services;
     padding-bottom: 12px;
   }
 
+  > * {
+    text-align: center;
+  }
+
   .service {
     background: #F8F5F1;
     padding: 20px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    > * {
+      text-align: center;
+    }
 
     .title {
       display: flex;

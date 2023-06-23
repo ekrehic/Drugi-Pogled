@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router'
 
-import ComingSoon from "@/components/ComingSoon.vue";
 import LandingPage from "@/components/LandingPage.vue";
 
 Vue.use(VueRouter);
@@ -19,11 +18,6 @@ export default new VueRouter({
             redirect: () => {
                 return '/'
             }
-        },
-        {
-            path: '/coming-soon',
-            name: 'ComingSoon',
-            component: ComingSoon,
         },
         {
             path: '/drugiPogled',

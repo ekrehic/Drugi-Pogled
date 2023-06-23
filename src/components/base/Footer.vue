@@ -1,33 +1,46 @@
 <template>
   <div class="page-footer">
     <div class="footer__content">
-      <div class="links">
-        <div v-for="item in navigationItems" :key="`footer-link-${item.name}`" class="link">
-          <router-link :to="item.link">
-            {{ item.name }}
-          </router-link>
-        </div>
-      </div>
-      <div class="social-media">
-        <a href="https://facebook.com/riverdrina/" target="_blank">
-          <svg-icons icon="facebook" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
-        </a>
-        <a href="https://www.instagram.com/riverapartments/" target="_blank">
-          <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
-        </a>
-        <a href="https://wa.me/41767923562" target="_blank">
-          <svg-icons icon="whatsup" view-box="0 0 308 308" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>
-        </a>
-      </div>
-      <div class="contact-mail">
-        <a href="mailto:info@riverdrina.ba">
-          info@riverdrina.ba
-        </a>
+<!--      <div class="links">-->
+<!--        <div v-for="item in navigationItems" :key="`footer-link-${item.name}`" class="link">-->
+<!--          <router-link :to="item.link">-->
+<!--            {{ item.name }}-->
+<!--          </router-link>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="social-media">-->
+<!--        <a href="https://facebook.com/riverdrina/" target="_blank">-->
+<!--          <svg-icons icon="facebook" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
+<!--        </a>-->
+<!--        <a href="https://www.instagram.com/riverapartments/" target="_blank">-->
+<!--          <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
+<!--        </a>-->
+<!--        <a href="https://wa.me/41767923562" target="_blank">-->
+<!--          <svg-icons icon="whatsup" view-box="0 0 308 308" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="contact-mail">-->
+<!--        <a href="mailto:info@riverdrina.ba">-->
+<!--          info@riverdrina.ba-->
+<!--        </a>-->
+<!--      </div>-->
+    </div>
+    <div class="footer__bottom">
+      <div class="obrt">
+          <span class="has-text-weight-semibold is-block">
+            Drugi pogled, obrt za savjetovanje i poduku, vl. Danijela Tadić
+          </span>
+        <span class="is-block">
+            IBAN: HR1624020061140467055
+          </span>
+        <span class="is-block">
+            Banka: Erste&Steiermärkische Bank d.d.
+          </span>
       </div>
       <div class="copyright">
-        <span>
-          © 2022 River Drina, Inc. All right reserved
-        </span>
+          <span>
+            ©Copyright Drugi Pogled 2023. All right reserved
+          </span>
       </div>
     </div>
   </div>
@@ -70,12 +83,14 @@ export default Footer;
 
 <style lang="scss">
 .page-footer {
-  background: #4B778D;
+  background: #222F4F;
   color: #fff;
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 180px;
+  }
+
 
   .footer__content {
     max-width: 1000px;
@@ -126,14 +141,28 @@ export default Footer;
       margin-bottom: 30px;
 
       a {
-        color: #8fd9a8;
+        color: #03AFAE;
       }
     }
+  }
 
-    .copyright {
-      span{
-        font-size: 12px;
-      }
+  .footer__bottom {
+    width: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    span {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      text-align: center;
     }
   }
 }
