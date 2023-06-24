@@ -108,6 +108,7 @@ export default Contact;
       @media screen and (max-width: 520px) {
         width: 85%;
         margin: -140px auto;
+        padding: 20px;
       }
 
 

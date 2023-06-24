@@ -86,7 +86,6 @@ class Navigation extends Vue {
     contact: false,
   }
 
-  //todo routs
   get navigationItems() {
     return [
       {

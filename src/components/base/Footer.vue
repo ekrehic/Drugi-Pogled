@@ -1,29 +1,30 @@
 <template>
   <div class="page-footer">
     <div class="footer__content">
-<!--      <div class="links">-->
-<!--        <div v-for="item in navigationItems" :key="`footer-link-${item.name}`" class="link">-->
-<!--          <router-link :to="item.link">-->
-<!--            {{ item.name }}-->
-<!--          </router-link>-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="footer__logo">
+        <img class="logo" src="@/assets/images/drugipogled_white.png" alt="DRUGI POGLED"/>
+      </div>
+
+      <div class="links">
+        <div v-for="item in navigationItems" :key="`footer-link-${item.name}`" class="link">
+          <router-link :to="item.link">
+            {{ item.name }}
+          </router-link>
+        </div>
+      </div>
 <!--      <div class="social-media">-->
-<!--        <a href="https://facebook.com/riverdrina/" target="_blank">-->
+<!--        <a href="" target="_blank">-->
 <!--          <svg-icons icon="facebook" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
 <!--        </a>-->
-<!--        <a href="https://www.instagram.com/riverapartments/" target="_blank">-->
+<!--        <a href="" target="_blank">-->
 <!--          <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
 <!--        </a>-->
-<!--        <a href="https://wa.me/41767923562" target="_blank">-->
-<!--          <svg-icons icon="whatsup" view-box="0 0 308 308" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
-<!--        </a>-->
 <!--      </div>-->
-<!--      <div class="contact-mail">-->
-<!--        <a href="mailto:info@riverdrina.ba">-->
-<!--          info@riverdrina.ba-->
-<!--        </a>-->
-<!--      </div>-->
+      <div class="contact-mail">
+        <a href="mailto:info@riverdrina.ba">
+          info@drugipogled.hr
+        </a>
+      </div>
     </div>
     <div class="footer__bottom">
       <div class="obrt">
@@ -55,24 +56,28 @@ class Footer extends Vue {
   get navigationItems() {
     return [
       {
-        name: this.$t(`navigation.about`),
-        link: '/about'
+        name: 'Drugi pogled',
+        link: '/drugiPogled'
       },
       {
-        name: this.$t(`navigation.apartments`),
-        link: '/apartments'
+        name: 'O meni',
+        link: '/oMeni'
       },
       {
-        name: this.$t(`navigation.wellnessSpa`),
-        link: '/wellness'
+        name: 'O Gestalt terapiji',
+        link: '/oGestaltTerapiji'
       },
       {
-        name: this.$t(`navigation.swimmingPool`),
-        link: '/pool'
+        name: 'Usluge i cjenik',
+        link: '/usluge'
       },
       {
-        name: this.$t(`navigation.location`),
-        link: '/location'
+        name: 'Suradnja',
+        link: '/suradnja'
+      },
+      {
+        name: 'Kontakt',
+        link: '/kontakt'
       },
     ];
   }
@@ -86,11 +91,13 @@ export default Footer;
   background: #222F4F;
   color: #fff;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     padding-top: 180px;
   }
-
 
   .footer__content {
     max-width: 1000px;
@@ -99,11 +106,16 @@ export default Footer;
     flex-direction: column;
     align-items: center;
 
+    .footer__logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
     .links {
       display: flex;
       width: 100%;
       justify-content: space-around;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
 
       @media screen and (max-width: 768px) {
         flex-direction: column;
@@ -141,6 +153,7 @@ export default Footer;
       margin-bottom: 30px;
 
       a {
+        font-size: 20px;
         color: #03AFAE;
       }
     }
