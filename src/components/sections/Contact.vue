@@ -1,7 +1,7 @@
 <template>
   <div id="contact" class="contact">
     <a
-        href="https://www.google.com/maps/place/Hercegova%C4%8Dka+ul.+59,+10000,+Zagreb,+Hrvatska/@45.8165184,15.954579,17z/data=!3m1!4b1!4m6!3m5!1s0x4765d6df9c4958d3:0x3a845637937cd51d!8m2!3d45.8165184!4d15.9571539!16s%2Fg%2F11ft0lclvk?entry=ttu"
+        href="https://www.google.com/maps/place/Ilica+134,+10000,+Zagreb,+Croatia/@45.8131184,15.9569435,17z/data=!3m1!4b1!4m6!3m5!1s0x4765d6e0bc17bf79:0x979e49bc7c0f5b6!8m2!3d45.8131147!4d15.9595184!16s%2Fg%2F11c2dm1y32?entry=ttu"
         class=" contact__map lh-0"
         target="_blank"
     >
@@ -18,7 +18,7 @@
           <div class="data is-flex is-align-items-center" style="gap: 10px">
             <svg-icons icon="location" stroke="#22625D"/>
             <p>
-              Hercegovačka ulica 59, 10000 Zagreb
+              Ilica 134, 10000 Zagreb
             </p>
           </div>
           <div class="data is-flex is-align-items-center" style="gap: 10px">
@@ -38,6 +38,15 @@
         <button class="button is-fullwidth" @click="modals.contact = true">
           Kontaktirajte nas
         </button>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com/drugi.pogled.savjetovanje" target="_blank">
+            <svg-icons icon="facebook" stroke="transparent" fill="#03AFAE" :width="24" :height="24"/>
+          </a>
+          <a href="https://www.instagram.com/drugi_pogled_savjetovanje/" target="_blank">
+            <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#03AFAE" :width="24" :height="24"/>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -85,6 +94,11 @@ export default Contact;
   .contact__content {
     background: #222F4F;
     min-height: 350px;
+    padding-bottom: 180px;
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 20px;
+    }
 
     .contact__info {
       background: #fff;
@@ -128,6 +142,28 @@ export default Contact;
             font-size: 18px;
           }
         }
+      }
+    }
+  }
+
+  .social-media {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    .vue-icon__wrapper {
+      padding: 4px;
+      margin: 0 10px;
+      //border: 2px solid #8fd9a8;
+      border-radius: 50%;
+      transition: all 250ms ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.08);
       }
     }
   }

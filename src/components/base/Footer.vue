@@ -12,17 +12,17 @@
           </router-link>
         </div>
       </div>
-<!--      <div class="social-media">-->
-<!--        <a href="" target="_blank">-->
-<!--          <svg-icons icon="facebook" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
-<!--        </a>-->
-<!--        <a href="" target="_blank">-->
-<!--          <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#8FD9A8" :width="24" :height="24"/>-->
-<!--        </a>-->
-<!--      </div>-->
       <div class="contact-mail">
-        <a href="mailto:info@riverdrina.ba">
+        <a href="mailto:info@drugipogled.hr">
           info@drugipogled.hr
+        </a>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/drugi.pogled.savjetovanje" target="_blank">
+          <svg-icons icon="facebook" stroke="transparent" fill="#03AFAE" :width="24" :height="24"/>
+        </a>
+        <a href="https://www.instagram.com/drugi_pogled_savjetovanje/" target="_blank">
+          <svg-icons icon="instagram" view-box="0 0 242 242" stroke="transparent" fill="#03AFAE" :width="24" :height="24"/>
         </a>
       </div>
     </div>
@@ -136,15 +136,15 @@ export default Footer;
       margin-bottom: 20px;
 
       .vue-icon__wrapper {
-        padding: 8px;
+        padding: 4px;
         margin: 0 10px;
-        border: 2px solid #8fd9a8;
+        //border: 2px solid #8fd9a8;
         border-radius: 50%;
         transition: all 250ms ease;
         cursor: pointer;
 
         &:hover {
-          transform: scale(1.05);
+          transform: scale(1.08);
         }
       }
     }

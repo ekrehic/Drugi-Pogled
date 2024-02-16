@@ -4,9 +4,13 @@ import Icons from "@/components/base/Icons.vue";
 import VueI18n from 'vue-i18n';
 import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
+import VueAnalytics from 'vue-analytics';
 
 Vue.use(VueI18n);
 Vue.use(Buefy);
+Vue.use(VueAnalytics, {
+    id: 'AW-16461670643'
+});
 
 import router from './router';
 

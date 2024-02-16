@@ -15,7 +15,7 @@
       </div>
     </div>
     <p>
-      Savjetovanje je moguće dogovoriti u živo ili u online okruženju putem Skypea ili Google Meeta.
+      Savjetovanje je moguće dogovoriti u živo ili u online okruženju putem Skypea, Google Meeta ili Zooma.
     </p>
     <p>
       Radno vrijeme prema dogovoru.
@@ -36,15 +36,15 @@ class Services extends Vue {
   get services() {
     return [
       {
-        name: '<span class="is-block-desktop">Individualno savjetovanje</span> za studente i nezaposlene',
+        name: '<span class="is-block-desktop">Individualno savjetovanje</span> <span class="is-block-desktop">za mlade do 18 godina,</span> studente i nezaposlene',
         price: '25€',
         duration: '60 minuta',
       },
-      {
-        name: '<span class="is-block-desktop">Individualno savjetovanje</span> za mlade do 18 godina',
-        price: '27€',
-        duration: '60 minuta',
-      },
+      // {
+      //   name: '<span class="is-block-desktop">Individualno savjetovanje</span> za mlade do 18 godina',
+      //   price: '27€',
+      //   duration: '60 minuta',
+      // },
       {
         name: '<span class="is-block-desktop">Individualno savjetovanje</span> za zaposlene',
         price: '30€',
@@ -92,7 +92,7 @@ export default Services;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 58px;
+      min-height: 72px;
       margin-bottom: 10px;
 
       h2 {

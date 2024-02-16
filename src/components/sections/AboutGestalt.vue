@@ -3,7 +3,8 @@
       <div class="section">
         <div class="columns is-multiline">
           <div class="column is-4 column--image lh-0">
-            <img src="@/assets/images/Gestalt_therapy.png" alt="Gestalt therapy"/>
+            <img src="@/assets/images/Gestalt_therapy.png" alt="Gestalt therapy" class="is-hidden-mobile"/>
+            <img src="@/assets/images/Gestalt_therapy_mobile.png" alt="Gestalt therapy" class="is-hidden-tablet"/>
           </div>
           <div class="column is-8 column--text is-flex is-flex-direction-column is-justify-content-flex-end">
             <h1>
