@@ -21,9 +21,9 @@
       Radno vrijeme prema dogovoru.
     </p>
 
-    <p class="p-t-10 info">
-      Obveznik nije u sustavu PDV-a, PDV nije obračunat temeljem čl. 90 st.1 i st.2 Zakona o PDV-u (Narodne novine br. 73/13)
-    </p>
+<!--    <p class="p-t-10 info">-->
+<!--      Obveznik nije u sustavu PDV-a, PDV nije obračunat temeljem čl. 90 st.1 i st.2 Zakona o PDV-u (Narodne novine br. 73/13)-->
+<!--    </p>-->
   </div>
 </template>
 
