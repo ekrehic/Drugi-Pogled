@@ -36,7 +36,7 @@ class Services extends Vue {
   get services() {
     return [
       {
-        name: '<span class="is-block-desktop">Individualno savjetovanje</span> <span class="is-block-desktop">za mlade do 18 godina,</span> studente i nezaposlene',
+        name: '<span class="is-block-desktop">Individualno savjetovanje</span> <span class="is-block-desktop"> za mlade punoljetne osobe,</span> studente i nezaposlene',
         price: '25€',
         duration: '60 minuta',
       },
@@ -47,12 +47,12 @@ class Services extends Vue {
       // },
       {
         name: '<span class="is-block-desktop">Individualno savjetovanje</span> za zaposlene',
-        price: '30€',
+        price: '35€',
         duration: '60 minuta',
       },
       {
         name: '<span class="is-block-desktop">Partnersko savjetovanje</span>',
-        price: '50€',
+        price: '55€',
         duration: '90 minuta',
       },
     ];
