@@ -37,6 +37,9 @@
         <span class="is-block">
             Banka: Erste&Steiermärkische Bank d.d.
           </span>
+        <span class="is-block" style="font-style: italic">
+          Obveznik nije u sustavu PDV-a te PDV nije obračunat temeljem čl. 90 st.1 i st.2 Zakona o PDV-u.
+          </span>
       </div>
       <div class="copyright">
           <span>

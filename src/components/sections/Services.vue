@@ -35,24 +35,29 @@ import { Component } from 'vue-property-decorator';
 class Services extends Vue {
   get services() {
     return [
-      {
-        name: '<span class="is-block-desktop">Individualno savjetovanje</span> <span class="is-block-desktop"> za mlade punoljetne osobe,</span> studente i nezaposlene',
-        price: '30€',
-        duration: '60 minuta',
-      },
+      // {
+      //   name: '<span class="is-block-desktop">Individualno savjetovanje</span> <span class="is-block-desktop"> za mlade punoljetne osobe,</span> studente i nezaposlene',
+      //   price: '30€',
+      //   duration: '60 minuta',
+      // },
       // {
       //   name: '<span class="is-block-desktop">Individualno savjetovanje</span> za mlade do 18 godina',
       //   price: '27€',
       //   duration: '60 minuta',
       // },
+      // {
+      //   name: '<span class="is-block-desktop">Individualno savjetovanje</span> za zaposlene',
+      //   price: '40€',
+      //   duration: '60 minuta',
+      // },
       {
-        name: '<span class="is-block-desktop">Individualno savjetovanje</span> za zaposlene',
+        name: '<span class="is-block-desktop">Individualno savjetovanje</span> za punoljetne osobe',
         price: '40€',
         duration: '60 minuta',
       },
       {
         name: '<span class="is-block-desktop">Partnersko savjetovanje</span>',
-        price: '55€',
+        price: '60€',
         duration: '90 minuta',
       },
     ];
