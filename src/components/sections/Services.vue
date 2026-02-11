@@ -52,12 +52,12 @@ class Services extends Vue {
       // },
       {
         name: '<span class="is-block-desktop">Individualno savjetovanje</span> za punoljetne osobe',
-        price: '40€',
+        price: '50€',
         duration: '60 minuta',
       },
       {
         name: '<span class="is-block-desktop">Partnersko savjetovanje</span>',
-        price: '60€',
+        price: '70€',
         duration: '90 minuta',
       },
     ];
