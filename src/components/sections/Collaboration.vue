@@ -6,7 +6,7 @@
         </h1>
 
         <p>
-          Aktivni sam volonter u
+          Volontirala sam u
           <span class="has-text-italic">
             Centru za poremećaje hranjenja BEA,
           </span>
@@ -16,7 +16,7 @@
           </a>
         </p>
         <p>
-          Surađujem s udrugom
+          Surađivala sam s udrugom
           <span class="has-text-italic">
             Centar za razvoj vrijednosti
           </span>

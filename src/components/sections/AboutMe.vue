@@ -13,19 +13,45 @@
           </div>
           <div class="column is-12-touch is-8-desktop column--text">
             <p class="p-b-15">
-              Ja sam Danijela Tadić, magistra pedagogije i educirana sam u području  geštalt psihoterapije pri Centru IGW Zagreb. Oduvijek me privlačila ideja kako pomoći drugima i bolje se međusobno razumjeti. Na taj put krećem upisujući studij pedagogije. Profesionalnu karijeru započinjem radom u osnovnoj školi te u sustavu obrazovanja ostajem duži period. Dodatno sam se educirala u području profesionalnog usmjeravanja i savjetovanja u razvoju karijere te sam završila program stručnog usavršavanja vezano uz upravljanje ljudskim resursima. S Gestaltom sam se susrela kad sam imala 25 godina. Moja terapeutica me primila za ruku i povela na jedno nevjerojatno putovanje. Pružajući mi podršku često me je poticala da „bacim“ drugi pogled na stvari. Gestalt i ja družili smo se tijekom svih ovih godina na različite načine.
+              Ja sam Danijela Tadić, licencirani gestalt psihoterapeut i magistra pedagogije. Oduvijek me
+              privlačila ideja kako pomoći drugima i bolje se međusobno razumjeti. Na taj put krećem
+              upisujući studij pedagogije. Profesionalnu karijeru započinjem radeći u osnovnoj školi te u
+              sustavu obrazovanja ostajem duži period. Dodatno sam se educirala u području
+              profesionalnog usmjeravanja i savjetovanja u razvoju karijere te sam završila program
+              stručnog usavršavanja vezan uz upravljanje ljudskim resursima.
             </p>
             <p class="p-b-15">
-              Tijekom trogodišnjeg osobnog iskustva partnerske terapije prema Imago principima javila mi se želja za potpunijim upoznavanjem sebe te upisujem edukaciju za Gestalt psihoterapeuta pri Centru IGW Zagreb. Prije nepune dvije godine odlučila sam da se u potpunosti želim posvetiti savjetodavnom radu s klijentima te sam otvorila privatnu praksu. Svoje daljnje stručno usavršavanje planiram u smjeru partnerske terapije prema Imago principima.
+              Sa gestaltom se susrećem kada sam imala 25 godina. Kroz vlastito terapijsko iskustvo, moja
+              terapeutica me primila za ruku i povela na jedno nevjerojatno putovanje. Pružajući mi
+              podršku, često me poticala da “bacim” drugačiji pogled na stvari. Gestalt i ja družili smo se
+              tijekom svih ovih godina na različite načine.
+            </p>
+<!--            <p class="p-b-15">-->
+<!--              Kao vanjski suradnik u pružanju savjetodavnih usluga surađujem s Centrom za poremećaje hranjenja BEA. Kontinuirano se dodatno educiram i usavršavavam te sam uključena u superviziju psihoterapijskog rada s ciljem što kvalitetnijeg rada s klijentima.-->
+<!--              <span class="is-block">-->
+<!--            Pridruženi sam član Društva gestalt i integrativnih psihoterapeuta Hrvatske (DGIPH).-->
+<!--          </span>-->
+<!--            </p>-->
+            <p class="p-b-15">
+              Tijekom trogodišnjeg osobnog iskustva partnerske terapije prema principima
+              <span class="has-text-italic">Imago terapije partnerskih odnosa</span>  javlja mi se želja za potpunijim upoznavanjem sebe te upisujem
+              edukaciju za gestalt psihoterapeuta pri <span class="has-text-italic">Centru IGW Zagreb.</span> Prije tri godine odlučila sam se u
+              potpunosti posvetiti psihoterapijskom radu s klijentima te sam otvorila privatnu praksu.
             </p>
             <p class="p-b-15">
-              Kao vanjski suradnik u pružanju savjetodavnih usluga surađujem s Centrom za poremećaje hranjenja BEA. Kontinuirano se dodatno educiram i usavršavavam te sam uključena u superviziju psihoterapijskog rada s ciljem što kvalitetnijeg rada s klijentima.
-              <span class="is-block">
-            Pridruženi sam član Društva gestalt i integrativnih psihoterapeuta Hrvatske (DGIPH).
-          </span>
+              Posebno me zanimaju partnerski odnosi te trenutno završavam edukaciju iz partnerske
+              terapije prema principima Imago terapije.
+            </p>
+            <p class="p-b-15">
+              Kao vanjski suradnik u pružanju psihoterapijskih i savjetodavnih usluga surađujem s
+              Centrom za poremećaje hranjenja BEA. Kontinuirano se dodatno educiram i usavršavam te
+              sam uključena u superviziju psihoterapijskog rada s ciljem što kvalitetnijeg rada s klijentima.
+              Pridružena sam članica Društva gestalt i integrativnih psihoterapeuta Hrvatske (DGIPH).
             </p>
             <p class="">
-              Radeći ovaj posao ostvarila sam svoj davni san o tome što želim biti i što želim raditi. Privatno sam supruga i majka jednog dječaka i jedne djevojčice. Životni prostor dijelimo s jednom predivnom sivom macom.
+              Radeći ovaj posao ostvarila sam svoj davni san o tome što želim biti i što želim raditi.
+              Privatno sam supruga i majka jednog dječaka i jedne djevojčice. Životni prostor dijelimo s
+              jednom macom.
             </p>
           </div>
           <div class="column is-4 column--image--desktop is-hidden-touch">

@@ -15,7 +15,7 @@
       </div>
     </div>
     <p>
-      Savjetovanje je moguće dogovoriti u živo ili u online okruženju putem Skypea, Google Meeta ili Zooma.
+      Savjetovanje je moguće dogovoriti u živo ili u online okruženju putem Google Meeta ili Zooma.
     </p>
     <p>
       Radno vrijeme prema dogovoru.
