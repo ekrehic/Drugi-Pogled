@@ -13,7 +13,7 @@
           </div>
           <div class="column is-12-touch is-8-desktop column--text">
             <p class="p-b-15">
-              Ja sam Danijela Tadić, licencirani gestalt psihoterapeut i magistra pedagogije. Oduvijek me
+              Ja sam Danijela Tadić, licencirani gestalt psihoterapeut, Imago terapeut u superviziji i magistra pedagogije. Oduvijek me
               privlačila ideja kako pomoći drugima i bolje se međusobno razumjeti. Na taj put krećem
               upisujući studij pedagogije. Profesionalnu karijeru započinjem radeći u osnovnoj školi te u
               sustavu obrazovanja ostajem duži period. Dodatno sam se educirala u području
@@ -46,7 +46,7 @@
               Kao vanjski suradnik u pružanju psihoterapijskih i savjetodavnih usluga surađujem s
               Centrom za poremećaje hranjenja BEA. Kontinuirano se dodatno educiram i usavršavam te
               sam uključena u superviziju psihoterapijskog rada s ciljem što kvalitetnijeg rada s klijentima.
-              Pridružena sam članica Društva gestalt i integrativnih psihoterapeuta Hrvatske (DGIPH).
+              Članica sam Hrvatske komore psihoterapeuta (HKPT) i integrativnih psihoterapeuta Hrvatske (DGIPH).
             </p>
             <p class="">
               Radeći ovaj posao ostvarila sam svoj davni san o tome što želim biti i što želim raditi.
